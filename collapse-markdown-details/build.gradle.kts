@@ -37,4 +37,4 @@ intellijPlatform {
 }
 
 // Speed up CI builds; no searchable options to generate
-tasks.named("buildSearchableOptions").configure { it.enabled = false }
+tasks.named("buildSearchableOptions").configure { enabled = false }
