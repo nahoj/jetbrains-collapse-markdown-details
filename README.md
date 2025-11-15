@@ -3,6 +3,14 @@
 A simple, hacky plugin for JetBrains IDEs that makes `<details></details>` sections in Markdown files collapsed by default. 
 
 ## Installation
+### From GitHub
+
+(May not be kept up to date in the future.)
+
+- Download the latest release from [the project](https://github.com/nahoj/jetbrains-plugins/releases).
+- Install in IDE: Settings/Preferences > Plugins > Gear icon > Install Plugin from Disk… and choose the ZIP in build/distributions.
+- Restart the IDE. Open a Markdown file containing `<details>…</details>`; the sections should appear collapsed with the summary as the hint.
+
 ### From Source
 
 - Ensure you have JDK 21 available.
