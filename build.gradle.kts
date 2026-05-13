@@ -7,7 +7,7 @@ plugins {
 }
 
 group = "eu.nahoj.jetbrains"
-version = "1.0.0"
+version = "1.0.1"
 
 // Load local.properties
 val localProperties: Properties = Properties()
