@@ -1,31 +1,18 @@
-# Collapse Markdown Details JetBrains Plugin
+[![JetBrains Marketplace](https://img.shields.io/jetbrains/plugin/v/31745?label=Marketplace)](https://plugins.jetbrains.com/plugin/31745)
+[![JetBrains Marketplace Downloads](https://img.shields.io/jetbrains/plugin/d/31745)](https://plugins.jetbrains.com/plugin/31745)
+[![GitHub Downloads (all assets, all releases)](https://img.shields.io/github/downloads/nahoj/jetbrains-collapse-markdown-details/total)](https://github.com/nahoj/jetbrains-collapse-markdown-details/releases)
+[![GitHub commits since latest release](https://img.shields.io/github/commits-since/nahoj/jetbrains-collapse-markdown-details/latest)](https://github.com/nahoj/jetbrains-collapse-markdown-details/commits)
 
-A simple, hacky plugin for JetBrains IDEs that makes `<details></details>` sections in Markdown files collapsed by default. 
+A simple, hacky plugin for JetBrains IDEs that makes `<details></details>` sections in Markdown files collapsed by default.
 
-## Installation
-### From GitHub
+You can install it directly from your IDE, from [the Marketplace](https://plugins.jetbrains.com/plugin/31745), or from source.
 
-(May not be kept up to date in the future.)
+**Status:** Works better than nothing. Expect only minimal maintenance. Discussion is nevertheless welcome!
 
-- Download the latest release from [the project](https://github.com/nahoj/jetbrains-plugins/releases).
-- Install in IDE: Settings/Preferences > Plugins > Gear icon > Install Plugin from Disk… and choose the ZIP in build/distributions.
-- Restart the IDE. Open a Markdown file containing `<details>…</details>`; the sections should appear collapsed with the summary as the hint.
+## Installing From Source
 
-### From Source
+Create `local.properties` from the example if you want Gradle to use your local JetBrains IDE and save the 10+ GB of cache storage.
 
-- Ensure you have JDK 21 available.
+`./gradlew buildPlugin` creates the zip in `build/distributions`.
 
-```bash
-cd collapse-markdown-details
-./gradlew buildPlugin
-```
-
-or
-
-- Open the project in your IDE.
-- Build the plugin using the `buildPlugin` task.
-
-Then,
-
-- Install in IDE: Settings/Preferences > Plugins > Gear icon > Install Plugin from Disk… and choose the ZIP in build/distributions.
-- Restart the IDE. Open a Markdown file containing `<details>…</details>`; the sections should appear collapsed with the summary as the hint.
+`./gradlew runIde` runs the sandbox IDE with the plugin installed.
